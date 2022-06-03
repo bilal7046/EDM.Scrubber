@@ -1,0 +1,9 @@
+.text-card {
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.set-margin
+{
+  margin: 3px;
+}

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Scrublists</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li > <a [routerLink]="['/scrub']" routerLinkActive="active">Scrub File</a></li>
+      <li><a href="#">Manual Verify</a></li>
+      <li><a href="#">Results</a></li>
+      <li><a href="#">Datasets</a></li>
+      <li><a href="#">Filtersets</a></li>
+
+      <ng-container *ngIf="(currentUser$ |async)===null">
+        <!-- <li><a href="#">Logout</a></li> -->
+        <li><a  [routerLink]="['/auth/Login']">SignIn</a></li>
+        <li><a  [routerLink]="['/auth/Signup']">SignUp</a></li>
+      </ng-container>
+      <ng-container *ngIf="currentUser$ |async">
+        <li><a href="#">Welcome User</a></li>
+
+      </ng-container>
+
+
+    </ul>
+  </div>
+</nav>
+

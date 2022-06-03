@@ -1,0 +1,33 @@
+<div class="container-fluid ">
+  <div class="container">
+    <h2 class="text-center" id="title">Scrublists</h2>
+
+    <hr>
+    <div class="row ">
+      <div class="text-card col-md-4 col-md-offset-4">
+
+        <fieldset>
+          <p class="text-uppercase pull-center"> SignIn.</p>
+          <div class="form-group">
+            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="email"
+              [(ngModel)]="data.Email">
+          </div>
+
+          <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password"
+              [(ngModel)]="data.Password">
+          </div>
+          <div>
+            <input type="submit" class="btn btn-lg btn-primary" (click)="SignIn()" value="Sign In">
+          </div>
+        </fieldset>
+
+      </div>
+
+      <div class="col-md-2">
+        <!-------null------>
+      </div>
+
+
+    </div>
+  </div>
